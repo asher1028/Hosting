@@ -1,0 +1,102 @@
+/* Global Body Styling */
+body {
+    background-image: url("../Images/mainBG.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center;
+}
+
+/* Form Container */
+#formFillUp {
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for the form */
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Message Label */
+#commentsLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Input and Textarea Styles */
+#subjectText, #commentsText {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Textarea Styling */
+#commentsText {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Buttons Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Button Specific Styling */
+#btnBack {
+    background-color: #e74c3c; /* Red */
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#btnBack:hover {
+    background-color: #c0392b;
+}
+
+#btnSend {
+    background-color: #2ecc71; /* Green */
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#btnSend:hover {
+    background-color: #27ae60;
+}
+
+/* Adjusting layout for smaller screens */
+@media (max-width: 768px) {
+    #formFillUp {
+        width: 90%;
+        padding: 20px;
+    }
+    #commentsLabel {
+        font-size: 20px;
+    }
+    #subjectText, #commentsText {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
